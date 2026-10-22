@@ -23,4 +23,4 @@ O formulário envia as mensagens por e-mail pelo serviço gratuito FormSubmit (f
 destino principal guilhermeldps@gmail.com, com cópia para epaula78@gmail.com.
 No primeiro envio, o FormSubmit manda um e-mail de ativação para guilhermeldps@gmail.com;
 é preciso clicar em "Activate Form" uma única vez para os envios começarem a funcionar.
-Se o envio falhar, o site oferece mandar a mensagem pelo WhatsApp.
+O envio é um POST normal (sem AJAX); depois de enviado, o FormSubmit volta para o site com ?enviado=1 e aparece a confirmação.
