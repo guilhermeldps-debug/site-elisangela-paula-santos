@@ -267,20 +267,24 @@ Fale pelo WhatsApp
 </div>
 </div>
 
-<form style="flex: 999 1 480px; min-width: 0; background: #F3F0E8; padding: 40px; display: flex; flex-direction: column; gap: 20px; color: #2E3A4B">
+<form id="form-contato" novalidate style="flex: 999 1 480px; min-width: 0; background: #F3F0E8; padding: 40px; display: flex; flex-direction: column; gap: 20px; color: #2E3A4B">
 <div style="display: flex; flex-wrap: wrap; gap: 20px">
 <div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
 <label for="nome" style="font-size: 13px; font-weight: 600; color: #2E3A4B">Nome</label>
-<input id="nome" type="text" placeholder="Seu nome completo" style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1px solid #BFB7A7; background: #FFFFFF; color: #2E3A4B">
+<input id="nome" name="Nome" type="text" required autocomplete="name" placeholder="Seu nome completo" style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1px solid #BFB7A7; background: #FFFFFF; color: #2E3A4B">
 </div>
 <div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
 <label for="telefone" style="font-size: 13px; font-weight: 600; color: #2E3A4B">Telefone / WhatsApp</label>
-<input id="telefone" type="tel" placeholder="(11) 90000-0000" style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1px solid #BFB7A7; background: #FFFFFF; color: #2E3A4B">
+<input id="telefone" name="Telefone" type="tel" required autocomplete="tel" placeholder="(11) 90000-0000" style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1px solid #BFB7A7; background: #FFFFFF; color: #2E3A4B">
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px">
+<label for="email" style="font-size: 13px; font-weight: 600; color: #2E3A4B">E-mail <span style="font-weight: 400; color: #4E5967">(opcional)</span></label>
+<input id="email" name="email" type="email" autocomplete="email" placeholder="seu@email.com" style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1px solid #BFB7A7; background: #FFFFFF; color: #2E3A4B">
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
 <label for="area" style="font-size: 13px; font-weight: 600; color: #2E3A4B">Área do assunto</label>
-<select id="area" style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1px solid #BFB7A7; background: #FFFFFF; color: #2E3A4B">
+<select id="area" name="Área" style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1px solid #BFB7A7; background: #FFFFFF; color: #2E3A4B">
 <option>Direito Condominial</option>
 <option>Direito Trabalhista</option>
 <option>Direito Previdenciário</option>
@@ -289,9 +293,11 @@ Fale pelo WhatsApp
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px">
 <label for="mensagem" style="font-size: 13px; font-weight: 600; color: #2E3A4B">Mensagem</label>
-<textarea id="mensagem" rows="5" placeholder="Conte brevemente sua situação" style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1px solid #BFB7A7; background: #FFFFFF; color: #2E3A4B; resize: vertical"></textarea>
+<textarea id="mensagem" name="Mensagem" rows="5" required placeholder="Conte brevemente sua situação" style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1px solid #BFB7A7; background: #FFFFFF; color: #2E3A4B; resize: vertical"></textarea>
 </div>
-<button type="button" style="align-self: flex-start; min-width: 260px; font-family: inherit; background: #0E1C30; color: #FFFFFF; border: none; font-size: 15px; font-weight: 600; padding: 17px 32px; cursor: pointer">Enviar mensagem</button>
+<input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0">
+<button type="submit" id="form-enviar" style="align-self: flex-start; min-width: 260px; font-family: inherit; background: #0E1C30; color: #FFFFFF; border: none; font-size: 15px; font-weight: 600; padding: 17px 32px; cursor: pointer">Enviar mensagem</button>
+<p id="form-status" role="status" aria-live="polite" style="margin: 0; font-size: 15px; line-height: 1.6; font-weight: 600; color: #0E1C30"></p>
 <p style="margin: 0; font-size: 13px; line-height: 1.6; color: #4E5967">Seus dados serão usados apenas para retorno do contato, conforme a LGPD.</p>
 </form>
 </div>
@@ -332,6 +338,56 @@ Fale pelo WhatsApp
   btn.addEventListener('click', function () { setOpen(menu.hidden); });
   document.querySelectorAll('.menu-link').forEach(function (a) {
     a.addEventListener('click', function () { setOpen(false); });
+  });
+})();
+
+(function () {
+  var form = document.getElementById('form-contato');
+  var btn = document.getElementById('form-enviar');
+  var status = document.getElementById('form-status');
+  var DESTINO = 'https://formsubmit.co/ajax/guilhermeldps@gmail.com';
+  var WHATS = 'https://wa.me/5511952439177';
+  function aviso(texto, cor) { status.textContent = texto; status.style.color = cor || '#0E1C30'; }
+  function avisoComWhats(texto, msg) {
+    status.textContent = texto + ' ';
+    status.style.color = '#8A2A1E';
+    var a = document.createElement('a');
+    a.href = WHATS + '?text=' + encodeURIComponent(msg);
+    a.target = '_blank'; a.rel = 'noopener';
+    a.textContent = 'Enviar pelo WhatsApp';
+    status.appendChild(a);
+  }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var nome = form.Nome.value.trim(), tel = form.Telefone.value.trim(), msg = form.Mensagem.value.trim();
+    if (!nome || !tel || !msg) { aviso('Preencha nome, telefone e mensagem.', '#8A2A1E'); return; }
+    if (form.email.value && !form.email.checkValidity()) { aviso('Confira o e-mail informado.', '#8A2A1E'); return; }
+    if (form._honey.value) return;
+    var area = form['Área'].value;
+    var dados = {
+      Nome: nome, Telefone: tel, 'E-mail': form.email.value.trim() || '(não informado)',
+      'Área': area, Mensagem: msg,
+      _subject: 'Nova mensagem pelo site — ' + area,
+      _cc: 'epaula78@gmail.com',
+      _template: 'table', _captcha: 'false'
+    };
+    if (form.email.value.trim()) dados._replyto = form.email.value.trim();
+    var resumo = 'Olá, Dra. Elisângela. Sou ' + nome + ' (' + tel + '). Assunto: ' + area + '. ' + msg;
+    btn.disabled = true; btn.textContent = 'Enviando...'; aviso('');
+    fetch(DESTINO, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(dados)
+    }).then(function (r) { return r.json(); }).then(function (res) {
+      if (String(res.success) === 'true') {
+        form.reset();
+        aviso('Mensagem enviada! Retornaremos em breve.');
+      } else {
+        avisoComWhats('Não foi possível enviar agora.', resumo);
+      }
+    }).catch(function () {
+      avisoComWhats('Não foi possível enviar agora.', resumo);
+    }).finally(function () { btn.disabled = false; btn.textContent = 'Enviar mensagem'; });
   });
 })();
 </script>
