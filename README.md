@@ -16,4 +16,4 @@ Os trechos entre colchetes no `index.html` ainda precisam dos dados reais:
 - Número da OAB/SP
 - E-mail
 - Endereço do escritório e horário de atendimento
-- Foto profissional e formação acadêmica
+- Foto profissional
