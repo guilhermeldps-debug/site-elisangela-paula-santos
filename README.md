@@ -14,6 +14,5 @@ Página única em HTML e CSS, sem dependências de build. Publicado pelo GitHub 
 Os trechos entre colchetes no `index.html` ainda precisam dos dados reais:
 
 - Número da OAB/SP
-- E-mail
 - Endereço do escritório e horário de atendimento
 - Foto profissional
