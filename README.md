@@ -12,13 +12,13 @@ Página única em HTML e CSS, sem dependências de build. Publicado pelo GitHub 
 - `politica-de-privacidade.html`: Política de Privacidade e LGPD
 - `termos-de-uso.html`: Termos de uso
 - `assets/ponte-osasco.webp` e `assets/predio-osasco.webp`: fotos do topo, que se alternam a cada 3 segundos
+- `assets/elisangela.webp`: foto da advogada na seção Sobre
 
 ## Itens a preencher
 
 Os trechos entre colchetes no `index.html` ainda precisam dos dados reais:
 
 - Endereço do escritório (no contato e no rodapé de todas as páginas) e horário de atendimento
-- Foto profissional
 
 ## Formulário de contato
 
