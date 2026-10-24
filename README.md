@@ -7,7 +7,7 @@ Página única em HTML e CSS, sem dependências de build. Publicado pelo GitHub 
 ## Estrutura
 
 - `index.html`: o site completo
-- `assets/ponte-osasco.webp`: foto do topo
+- `assets/ponte-osasco.webp` e `assets/predio-osasco.webp`: fotos do topo, que se alternam a cada 7 segundos
 
 ## Itens a preencher
 
