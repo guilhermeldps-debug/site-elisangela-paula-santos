@@ -32,3 +32,21 @@ O envio é um POST normal (sem AJAX); depois de enviado, o FormSubmit volta para
 
 - Revisar as respostas das Dúvidas frequentes quando a lei mudar e atualizar a data "Revisadas em".
 - Manter as respostas gerais: não responder casos concretos pelo site (Código de Ética da OAB, art. 42, I).
+
+## Identidade visual
+
+Baseada no logo "Dra. Elis Advocacia" (emblema com balança, letra E e arabesco).
+
+| Uso | Cor |
+| --- | --- |
+| Ardósia (nome do logo, anel do emblema) | `#7E8798` |
+| Ardósia profunda (títulos, botões, seções escuras) | `#3D4656` |
+| Ardósia escura (rodapé) | `#2B323E` |
+| Dourado (traços do emblema) | `#C4A06A` |
+| Dourado claro ("ADVOCACIA", detalhes em fundo escuro) | `#D8B890` |
+| Dourado para texto em fundo claro | `#8A6A3C` |
+| Marfim (fundo) | `#FAF7F2` |
+
+- Títulos e logotipo: Cormorant Garamond (Google Fonts). Textos: Inter.
+- Faixa dourado + ardósia (como no papel timbrado) na base da foto do topo, no topo do rodapé e abaixo do cabeçalho das páginas legais.
+- `assets/emblema.svg`: emblema em vetor, também usado como ícone da aba do navegador.
