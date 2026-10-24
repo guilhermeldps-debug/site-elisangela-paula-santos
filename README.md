@@ -4,6 +4,8 @@ Site institucional da advogada Elisângela Paula Santos (Osasco/SP), com atuaç�
 
 Página única em HTML e CSS, sem dependências de build. Publicado pelo GitHub Pages.
 
+**Site no ar:** https://guilhermeldps-debug.github.io/site-elisangela-paula-santos/
+
 ## Estrutura
 
 - `index.html`: o site completo
