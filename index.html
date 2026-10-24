@@ -15,6 +15,11 @@ summary{cursor:pointer;list-style:none}
 summary::-webkit-details-marker{display:none}
 details[open] .faq-plus{transform:rotate(45deg)}
 .faq-plus{transition:transform .2s ease}
+.wa-fab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom, 0px));width:56px;height:56px;border-radius:50%;background:#25D366;color:#FFFFFF;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,0.22);z-index:50;transition:opacity .2s ease, transform .2s ease}
+.wa-fab:hover{color:#FFFFFF;transform:scale(1.06)}
+.wa-fab:focus-visible{outline:3px solid #0E1C30;outline-offset:3px}
+.wa-fab.is-hidden{opacity:0;pointer-events:none;transform:scale(0.8)}
+@media (max-width: 640px){footer > div{padding-bottom:104px !important}}
 </style>
 </head>
 <body>
@@ -330,6 +335,9 @@ Fale pelo WhatsApp
 </div>
 </footer>
 
+<!-- Botão flutuante do WhatsApp -->
+<a class="wa-fab" id="wa-fab" href="https://wa.me/5511952439177?text=Ol%C3%A1%2C%20Dra.%20Elis%C3%A2ngela.%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-13.4 7.9L3 21l1.2-4.4A9 9 0 1 1 21 12z"></path><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z"></path></svg></a>
+
 </div>
 <script>
 (function () {
@@ -364,6 +372,17 @@ Fale pelo WhatsApp
     btn.textContent = 'Enviando...';
     aviso('');
   });
+})();
+
+(function () {
+  var fab = document.getElementById('wa-fab');
+  var alvo = document.getElementById('form-enviar');
+  if (!fab || !alvo || !('IntersectionObserver' in window)) return;
+  var celular = window.matchMedia('(max-width: 640px)');
+  var visivel = false;
+  function atualiza() { fab.classList.toggle('is-hidden', visivel && celular.matches); }
+  new IntersectionObserver(function (es) { visivel = es[0].isIntersecting; atualiza(); }).observe(alvo);
+  if (celular.addEventListener) celular.addEventListener('change', atualiza);
 })();
 </script>
 </body>
