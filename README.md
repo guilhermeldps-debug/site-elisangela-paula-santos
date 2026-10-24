@@ -51,5 +51,5 @@ Baseada no logo "Dra. Elis Advocacia" (emblema com balança, letra E e arabesco)
 - Cabeçalho branco fiel ao papel timbrado: logo à esquerda, balança em marca-d'água e faixa dourado + ardósia logo abaixo. A mesma faixa abre o rodapé.
 - `assets/logo-dra-elis.svg`: logo redesenhado em vetor, fiel ao do papel timbrado (letras em curvas, não depende de fonte instalada). Usado no cabeçalho e no rodapé, sempre sobre fundo claro.
 - `assets/logo-dra-elis.png`: o mesmo logo em PNG de alta resolução (3040 × 960, fundo transparente), para Canva, documentos e redes sociais.
-- `assets/balanca-marca-dagua.svg`: balança clara do papel timbrado (redesenhada em vetor), usada como marca-d'água no cabeçalho.
+- `assets/balanca-marca-dagua.svg`: balança clara do papel timbrado (redesenhada em vetor), usada como marca-d'água no cabeçalho; `assets/balanca-marca-dagua.png` é a versão em PNG de alta resolução para o Canva.
 - `assets/emblema-dra-elis.svg` e `assets/emblema-dra-elis.png` (512 × 512): emblema (balança com o E), ícone da aba do navegador; `assets/apple-touch-icon.png` (180 × 180) para a tela inicial do celular.
