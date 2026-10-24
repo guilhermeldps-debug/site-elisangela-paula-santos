@@ -48,5 +48,7 @@ Baseada no logo "Dra. Elis Advocacia" (emblema com balança, letra E e arabesco)
 | Marfim (fundo) | `#FAF7F2` |
 
 - Títulos e logotipo: Cormorant Garamond (Google Fonts). Textos: Inter.
-- Faixa dourado + ardósia (como no papel timbrado) na base da foto do topo, no topo do rodapé e abaixo do cabeçalho das páginas legais.
-- `assets/emblema.svg`: emblema em vetor, também usado como ícone da aba do navegador.
+- Cabeçalho branco fiel ao papel timbrado: logo à esquerda, balança em marca-d'água e faixa dourado + ardósia logo abaixo. A mesma faixa abre o rodapé.
+- `assets/logo-dra-elis.png`: logo original (recortado do papel timbrado), usado no cabeçalho e no rodapé, sempre sobre fundo claro.
+- `assets/balanca-marca-dagua.png`: balança clara do papel timbrado, usada como marca-d'água no cabeçalho.
+- `assets/emblema-original.png`: emblema original, ícone da aba do navegador.
