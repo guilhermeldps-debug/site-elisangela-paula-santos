@@ -1,6 +1,6 @@
 # Site — Dra. Elisângela Paula Santos
 
-Site institucional da advogada Elisângela Paula Santos (Osasco/SP), com atuação em Direito Condominial e Trabalhista.
+Site institucional da advogada Elisângela Paula Santos (Osasco/SP), com atuação em Direito Condominial, Trabalhista e Cível.
 
 Página única em HTML e CSS, sem dependências de build. Publicado pelo GitHub Pages.
 
