@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 18 92 92" width="368" height="368"><defs>
+<linearGradient id="anelTopo" x1="80" y1="0" x2="150" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C9A467"/><stop offset="0.55" stop-color="#DCC199"/><stop offset="1" stop-color="#C5CAD3"/></linearGradient>
+<linearGradient id="ouroV" x1="0" y1="26" x2="0" y2="86" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#D9BC8C"/><stop offset="0.5" stop-color="#C9A467"/><stop offset="1" stop-color="#B98F55"/></linearGradient>
+<linearGradient id="ouroH" x1="78" y1="0" x2="134" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B98F55"/><stop offset="0.5" stop-color="#DCC199"/><stop offset="1" stop-color="#C9A467"/></linearGradient>
+</defs>
+<path d="M104.34 21.63 A41.7 41.7 0 0 1 142.62 82.88" stroke="url(#anelTopo)" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+<path d="M104.34 21.63 A41.7 41.7 0 0 0 91.54 102.49" stroke="#C9A467" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+<path d="M93.59 25.73 A39.5 39.5 0 0 0 92.29 100.42" stroke="#7A8599" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.9"/>
+<path d="M108.3 26.6 C109.6 28.4 109.8 30.2 108.3 32.2 C106.8 30.2 107.0 28.4 108.3 26.6 Z" fill="#C9A467"/>
+<circle cx="108.3" cy="33.4" r="1.3" fill="#C9A467"/>
+<ellipse cx="108.3" cy="39.8" rx="1.6" ry="2.1" fill="#C9A467"/>
+<path d="M108.3 40.6 C102.3 38.4 95.3 38.6 91.3 40.4 C88.8 41.6 87.0 42.6 85.8 42.4" stroke="#C9A467" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<circle cx="85.8" cy="42.6" r="1.25" fill="#C9A467"/>
+<path d="M85.8 43.6 L77.39999999999999 67.6 M85.8 43.6 L94.2 67.6 M85.8 43.6 L85.8 67.2" stroke="#C9A467" stroke-width="0.45" fill="none" opacity="0.85"/>
+<path d="M76.8 67.6 C78.89999999999999 71.6 92.7 71.6 94.8 67.6 Z" fill="url(#ouroV)"/>
+<path d="M76.8 67.6 L94.8 67.6" stroke="#C9A467" stroke-width="0.6"/>
+<path d="M108.3 40.6 C114.3 38.4 121.3 38.6 125.3 40.4 C127.8 41.6 129.60000000000002 42.6 130.8 42.4" stroke="#C9A467" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<circle cx="130.8" cy="42.6" r="1.25" fill="#C9A467"/>
+<path d="M130.8 43.6 L122.4 67.6 M130.8 43.6 L139.20000000000002 67.6 M130.8 43.6 L130.8 67.2" stroke="#C9A467" stroke-width="0.45" fill="none" opacity="0.85"/>
+<path d="M121.80000000000001 67.6 C123.9 71.6 137.70000000000002 71.6 139.8 67.6 Z" fill="url(#ouroV)"/>
+<path d="M121.80000000000001 67.6 L139.8 67.6" stroke="#C9A467" stroke-width="0.6"/>
+<g transform="translate(108.6 0) scale(0.84 1) translate(-108.6 0)"><path d="M124.38023426061493 73.53001464128843H123.11376281112737C121.84729136163982 81.33147877013177 120.68213762811126 85.02957540263543 111.9688140556369 85.02957540263543H105.23118594436309C102.8502196193265 85.02957540263543 102.7489019033675 84.6749633967789 102.7489019033675 83.00322108345534V69.47730600292826H107.30819912152269C112.2221083455344 69.47730600292826 112.77935578330893 71.09838945827232 112.77935578330893 75.40439238653H114.04582723279648V61.97979502196193H112.77935578330893C112.77935578330893 66.33645680819912 112.2221083455344 67.90688140556368 107.30819912152269 67.90688140556368H102.7489019033675V55.748755490483155C102.7489019033675 54.077013177159586 102.8502196193265 53.72240117130307 105.23118594436309 53.72240117130307H111.76617862371889C119.51698389458272 53.72240117130307 120.88477306002927 56.508638360175695 121.6953147877013 63.5502196193265H122.96178623718887L121.54333821376281 52.1519765739385H93.02240117130307V53.72240117130307H94.23821376281113C98.13894582723279 53.72240117130307 98.2402635431918 54.27964860907759 98.2402635431918 56.10336749633967V82.64860907759882C98.2402635431918 84.47232796486091 98.13894582723279 85.02957540263543 94.23821376281113 85.02957540263543H93.02240117130307V86.6H122.25256222547583Z" fill="#6F7C92"/></g>
+<path d="M108.3 42 L108.3 84.5" stroke="url(#ouroV)" stroke-width="2.3" stroke-linecap="round"/>
+<path d="M108.3 33 L108.3 42" stroke="url(#ouroV)" stroke-width="1.7" stroke-linecap="round"/>
+<path d="M84.5 93.2 C88.5 88.6 99.5 90.2 108.6 95.2 C117.6 100.2 129.2 101.4 132.4 96.4 C135 92.2 126.2 89.2 117.6 92.2 C111.2 94.4 104.4 99.4 96.4 100.6 C89.6 101.6 84.2 99.4 85.6 95.6" stroke="url(#ouroH)" stroke-width="1.45" fill="none" stroke-linecap="round"/>
+<path d="M84.5 93.2 C82.4 95.6 80.6 96.6 77.6 96.2" stroke="#C9A467" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+</svg>

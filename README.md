@@ -49,6 +49,7 @@ Baseada no logo "Dra. Elis Advocacia" (emblema com balança, letra E e arabesco)
 
 - Títulos e logotipo: Cormorant Garamond (Google Fonts). Textos: Inter.
 - Cabeçalho branco fiel ao papel timbrado: logo à esquerda, balança em marca-d'água e faixa dourado + ardósia logo abaixo. A mesma faixa abre o rodapé.
-- `assets/logo-dra-elis.png`: logo original (recortado do papel timbrado), usado no cabeçalho e no rodapé, sempre sobre fundo claro.
-- `assets/balanca-marca-dagua.png`: balança clara do papel timbrado, usada como marca-d'água no cabeçalho.
-- `assets/emblema-original.png`: emblema original, ícone da aba do navegador.
+- `assets/logo-dra-elis.svg`: logo redesenhado em vetor, fiel ao do papel timbrado (letras em curvas, não depende de fonte instalada). Usado no cabeçalho e no rodapé, sempre sobre fundo claro.
+- `assets/logo-dra-elis.png`: o mesmo logo em PNG de alta resolução (3040 × 960, fundo transparente), para Canva, documentos e redes sociais.
+- `assets/balanca-marca-dagua.svg`: balança clara do papel timbrado (redesenhada em vetor), usada como marca-d'água no cabeçalho.
+- `assets/emblema-dra-elis.svg` e `assets/emblema-dra-elis.png` (512 × 512): emblema (balança com o E), ícone da aba do navegador; `assets/apple-touch-icon.png` (180 × 180) para a tela inicial do celular.
